@@ -19,7 +19,7 @@ class MyClient(discord.Client):
         
         mode = read_stat('mode')
         while True:
-            time.sleep(10
+            time.sleep(10)
             await self.change_presence(activity=CustomActivity(emoji="♟️", name=f"{mode.title()}: {get_elo(read_stat("username"), mode)} • Chess.com"))
 
 def start_discord_client():
